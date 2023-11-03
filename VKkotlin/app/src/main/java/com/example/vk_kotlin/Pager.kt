@@ -8,7 +8,7 @@ class Pager(
     fm: FragmentManager?,
     private val fragmentsLIst: List<Fragment>
 ) :
-    FragmentPagerAdapter(fm!!) {
+    FragmentPagerAdapter(fm!!, BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT) {
     override fun getItem(position: Int): Fragment {
         return fragmentsLIst[position]
     }

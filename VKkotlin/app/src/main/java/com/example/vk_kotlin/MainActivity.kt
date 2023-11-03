@@ -10,7 +10,7 @@ import com.google.android.material.bottomnavigation.BottomNavigationView
 class MainActivity : AppCompatActivity(), AdapterFeed.FragmentLikeListener, AdapterFeed.FragmentButtonListener, AdapterLike.FragmentLikeListener {
     var fragmentFeed: Fragment = FragmentFeed()
     var fragmentLike: Fragment = FragmentLike()
-    var fragmentProfile: Fragment = FragmentLike()
+    var fragmentProfile: Fragment = ProfileFragment()
     private lateinit var pager: ViewPager
     private lateinit var pagerAdapter: PagerAdapter
     var list: MutableList<Fragment> =  ArrayList()
